@@ -67,8 +67,9 @@ tbody tr:nth-child(even) {
 th { text-align: left; padding: 0.4em 1em; }
 td { vertical-align: middle; padding: 0.4em 1em; }
 
-#creators_list td:nth-child(1) {
-    padding: 0.4em 0;
+#creators_list td:nth-child(1),
+#productions_list td:nth-child(1) {
+    padding: 0.4em 0.1em;
 }
 
 h2 { font-size: 2.8em; margin: 0 0 0.4em; }
