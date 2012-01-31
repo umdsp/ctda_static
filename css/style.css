@@ -426,9 +426,38 @@ figcaption a:hover {
 
 #maincontent aside .objects {
     background: url('../images/imgframe.jpg') no-repeat center;
+    position: relative;
+}
+.objects #next, .objects #prev {
+    position: absolute;
+    top: 30%;
+    z-index: 100;
+    display: none;
+    color: #fff;
+    background: #191919;
+    background: rgba(0,0,0,0.5);
+    padding: 0.5em 2%;
+}
+.objects #next {
+    right: 5.7%;
+}
+.objects #prev {
+    left: 5.7%;
+}
+.objects:hover #next, .objects:hover #prev {
+    display: block;
 }
 #maincontent aside #digitalobjects {
     margin: 1em auto;
+}
+#maincontent #digitalobjects a span {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    background: #191919;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 2%;
+    color: #EEE;
 }
 
 .thumbnails ul {

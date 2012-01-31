@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('#wrapper').css('min-height', window.innerHeight - 50);
 
   if ($('#digitalobjects').length) {
-      $('#digitalobjects').coinslider({ width: 210, height: 210, delay: 10000 });
+      $('#digitalobjects').cycle({ timeout: 8000, height: 210, width: 210, next: '#next', prev: '#prev' });
   }
 
 });
