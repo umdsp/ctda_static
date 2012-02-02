@@ -431,12 +431,13 @@ figcaption a:hover {
 .objects #next, .objects #prev {
     position: absolute;
     top: 30%;
-    z-index: 100;
+    z-index: 1001;
     display: none;
     color: #fff;
     background: #191919;
     background: rgba(0,0,0,0.5);
     padding: 0.5em 2%;
+    cursor: pointer;
 }
 .objects #next {
     right: 5.7%;
@@ -444,22 +445,27 @@ figcaption a:hover {
 .objects #prev {
     left: 5.7%;
 }
-.objects:hover #next, .objects:hover #prev {
+.objects:hover #next, .objects:hover #prev, .objects:hover #caption {
     display: block;
 }
 #maincontent aside #digitalobjects {
     margin: 1em auto;
 }
-#maincontent #digitalobjects a span {
+.objects #caption {
     position: absolute;
-    bottom: 0;
-    width: 96%;
+    bottom: 6px;
+    width: 94%;
     background: #191919;
     background: rgba(0, 0, 0, 0.5);
     padding: 0.5em 2%;
     color: #EEE;
+    z-index: 1000;
+    display: none;
+    left: 1.5%;
+    text-align: center;
 }
-
+#digitalobjects a { padding: 1em 0; }
+#digitalobjects .fancy { display: block; text-align: center; }
 .thumbnails ul {
     list-style-type: none;
     padding-left: 0;

@@ -16,7 +16,16 @@ $(document).ready(function() {
   $('#wrapper').css('min-height', window.innerHeight - 50);
 
   if ($('#digitalobjects').length) {
-      $('#digitalobjects').cycle({ timeout: 8000, height: 210, width: 210, next: '#next', prev: '#prev' });
+      $('#digitalobjects').cycle({
+        timeout: 8000,
+        height: 240,
+        width: 210,
+        next: '#next',
+        prev: '#prev',
+        after: function() {
+          $('#caption').attr("href", $(this).children('img').attr('data-href'));
+        }
+      });
   }
 
 });
