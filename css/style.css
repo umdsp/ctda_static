@@ -283,6 +283,8 @@ body { background: url('../images/checkerbg.png') repeat; }
 #archivenav ul li a:hover {
     text-decoration: none;
 }
+#archivenav ul ul { display: none; }
+#archivenav ul ul li { text-indent: 1.6em; }
 
 /* Main content area */
 /* NOTE: Grid: 3x31.29%; gutters 3.06% */
@@ -343,6 +345,11 @@ figure img {
     display: block;
     width: 90%;
     margin: 1em auto;
+}
+figcaption img {
+    width: auto;
+    display: inline-block;
+    margin: 0 0.5em 0 0;
 }
 figcaption {
     width: 90%;
@@ -480,7 +487,7 @@ figcaption a:hover {
 .thumbnails ul li span {
     display: none;
 }
-#largepreview { margin: 1em auto; }
+#largepreview { margin: 1em auto; cursor: pointer; position: relative; }
 
 /* Footer styling */
 #wrapper > footer {

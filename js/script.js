@@ -15,6 +15,12 @@ $(document).ready(function() {
 
   $('#wrapper').css('min-height', window.innerHeight - 50);
 
+  $('#archivenav li:eq(4)').hover(function() {
+      $(this).children('ul').slideDown('slow');
+    }, function() {
+      $(this).children('ul').slideUp('slow');
+  });
+
   if ($('#digitalobjects').length) {
       $('#digitalobjects').cycle({
         timeout: 8000,
