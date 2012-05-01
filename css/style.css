@@ -341,6 +341,12 @@ figure {
 figure:last-child {
     margin-right: 0;
 }
+.videos figure:last-child { margin-right: 3.06%; }
+.videos { list-style-type: none; padding-left: 0; }
+.videos figure {
+    width: 48.46%;
+}
+.videos li:nth-child(2n) figure { margin-right: 0; }
 figure img {
     display: block;
     width: 90%;
@@ -398,6 +404,10 @@ figcaption a:hover {
 }
 #maincontent .main table {
     width: 100%;
+}
+#maincontent .linkeditems h3 {
+    color: #a03a22;
+    cursor: pointer;
 }
 #maincontent .linkeditems ul {
     list-style-type: none;

@@ -34,5 +34,10 @@ $(document).ready(function() {
       });
   }
 
+  $('.linkeditems ul, .linkeditems div').slideUp(0);
+  $('.linkeditems h3').click(function() {
+      $(this).siblings('ul, div').slideToggle(1200);
+  });
+
 });
 
